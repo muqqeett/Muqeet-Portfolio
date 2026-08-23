@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { SmoothScrollProvider } from './components/ui/SmoothScrollProvider';
 import { AmbientBackground } from './components/ui/AmbientBackground';
 import { IntroLoader } from './components/ui/IntroLoader';
@@ -39,6 +40,7 @@ export const App: React.FC = () => {
         {/* Footer */}
         <Footer />
       </div>
+      <Analytics />
     </SmoothScrollProvider>
   );
 };
